@@ -14,6 +14,9 @@ class User implements \Steam\Kit\User
     public function getInventoryBySteamId64(int $steamId64): array
     {
         // TODO: Implement getInventoryBySteamId64() method.
-        return [];
+        return [
+            1 => 20,
+            2 => 30
+        ];
     }
 }
