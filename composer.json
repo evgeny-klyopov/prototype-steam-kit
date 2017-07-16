@@ -1,0 +1,14 @@
+{
+    "name": "alva/prototype-steam-kit",
+    "description": "interface library for SteamKit",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Steam\\Kit\\": "Steam/Kit/",
+            "Steam\\Models\\": "Steam/Models/",
+
+            "Example\\Steam\\Kit\\": "Example/Steam/Kit/",
+            "Example\\Models\\": "Example/Models/"
+        }
+    }
+}
