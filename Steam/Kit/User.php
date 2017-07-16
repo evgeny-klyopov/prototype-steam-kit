@@ -1,7 +1,6 @@
 <?php
 namespace Steam\Kit;
 
-
 /**
  * Interface User
  * Интерфейс для работы с пользователем стим
@@ -27,4 +26,19 @@ interface User
      * ];
      */
     public function getInventoryBySteamId64(int $steamId64): array;
+
+    /**
+     * Получение списка значков пользователя http://prntscr.com/frpw1e
+     * (интересны только завершенные значки - значки с уровнем от 1 до ...)
+     * https://developer.valvesoftware.com/wiki/Steam_Web_API/Feedback#Provide_an_API_for_badges
+     * https://wiki.teamfortress.com/wiki/WebAPI/GetBadges
+     * @param int $steamId64    - Идентификатор steamId64
+     * @return array $badges    - Массив значков, ключи которого идентификаторы игр,
+     * значение - уровень значка
+     * $badges = [
+     *      @gameCardId => @level
+     *      ...
+     * ];
+     */
+    public function getBadges(int $steamId64): array;
 }

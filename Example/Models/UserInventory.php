@@ -9,7 +9,7 @@
 namespace Example\Models;
 
 
-class Inventory implements \Steam\Models\Inventory
+class UserInventory implements \Steam\Models\UserInventory
 {
     public function updateBySteamId64(int $steamId64, array $inventory): bool
     {

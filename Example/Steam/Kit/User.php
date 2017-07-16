@@ -17,6 +17,17 @@ class User implements \Steam\Kit\User
         return [
             1 => 20,
             2 => 30
+            // ...
+        ];
+    }
+
+    public function getBadges(int $steamId64): array
+    {
+        // TODO: Implement getBadges() method.
+        return [
+            18300  => 5,
+            639900 => 12
+            // ...
         ];
     }
 }
