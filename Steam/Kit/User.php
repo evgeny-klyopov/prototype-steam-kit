@@ -41,4 +41,14 @@ interface User
      * ];
      */
     public function getBadges(int $steamId64): array;
+
+    /**
+     * Получение уровня значка пользователя http://prntscr.com/frpvq0
+     * https://wiki.teamfortress.com/wiki/WebAPI/GetCommunityBadgeProgress
+     * @param int $steamId64    - Идентификатор steamId64
+     * @param int $gameCardId   - Идентификатор игры
+     * @param bool $isMetal     - Флаг металического значка
+     * @return int              - Возвращает уровень значка
+     */
+    public function getLevelBadge(int $steamId64, int $gameCardId, bool $isMetal): int;
 }

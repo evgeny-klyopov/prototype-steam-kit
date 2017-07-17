@@ -30,4 +30,10 @@ class User implements \Steam\Kit\User
             // ...
         ];
     }
+
+    public function getLevelBadge(int $steamId64, int $gameCardId): int
+    {
+        // TODO: Implement getLevelBadge() method.
+        return 1;
+    }
 }

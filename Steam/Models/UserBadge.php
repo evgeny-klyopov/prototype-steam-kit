@@ -19,7 +19,7 @@ interface UserBadge
     /**
      * Обновление значков пользователя
      * Обновление происходит в два этапа:
-     * - делаем insert on duplicate key (благодаря ключу steamId64_gameCardId_unique, в таблице steam_user_badge),
+     * - делаем insert on duplicate key (благодаря ключу steamId64_badgeId_unique, в таблице steam_user_badge),
      * обновляем dateUpdate (через переменную @dateUpdate = date('Y-m-d H:i:s');, чтобы у всех обновленных данных
      * было одинаковое время обновление) и level
      * - удаляем старые данные у которых dateUpdate != @dateUpdate, то есть те которые мы не обновили
