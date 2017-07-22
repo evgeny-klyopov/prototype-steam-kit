@@ -4,8 +4,8 @@ namespace Steam\Kit;
 
 
 /**
- * Interface Item
  * Получение информации о вещах на торговой площадке
+ * Interface Item
  * @package Steam\Kit
  */
 interface Item

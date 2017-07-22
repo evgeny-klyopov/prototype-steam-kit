@@ -2,6 +2,9 @@
 $loader = @include __DIR__ . '/vendor/autoload.php';
 
 
+
+
+/*
 $exampleSteamKitUser = new \Example\Steam\Kit\User();
 
 $exampleModelSteamUser = new \Example\Models\User();
@@ -31,5 +34,5 @@ echo 'Update steam inventory for user dronoz: ' . $exampleModelSteamInventory->u
 
 
 
-
+*/
 

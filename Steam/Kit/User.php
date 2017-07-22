@@ -2,8 +2,8 @@
 namespace Steam\Kit;
 
 /**
- * Interface User
  * Интерфейс для работы с пользователем стим
+ * Interface User
  * @package Steam\Kit
  */
 interface User
@@ -51,4 +51,11 @@ interface User
      * @return int              - Возвращает уровень значка
      */
     public function getLevelBadge(int $steamId64, int $gameCardId, bool $isMetal): int;
+
+    /**
+     * Получение списка игры пользователя
+     * @param int $steamId64
+     * @return array
+     */
+    public function getGames(int $steamId64): array;
 }
