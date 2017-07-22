@@ -11,10 +11,11 @@ namespace Steam\Models;
 interface User
 {
     /**
-     * Добавление пользователя $steamId64 или обновление $steamCommunityId у данного пользователя
-     * @param int $steamId64            - Идентификатор steamId64
-     * @param string $steamCommunityId  - Идентификатор пользователя в сообществе стиме
-     * @return bool                     - Флаг обновления, true - успешное обновление
+     * Добавление или обновляем пользователя
+     * - делаем insert on duplicate key (благодаря ключу steamId64, в таблице steam_user),
+     * обновляем CommunityId и dateUpdate (через переменную @dateUpdate = date('Y-m-d H:i:s');
+     * @param array $user   - Информация о пользователе (new \Steam\Kit\User())->getCommunityData('dronoz');
+     * @return bool         - Флаг обновления, true - успешное обновление
      */
-    public function insertOnUpdateUserBySteamId64(int $steamId64, string $steamCommunityId): bool;
+    public function insertOnUpdate(array $user): bool;
 }

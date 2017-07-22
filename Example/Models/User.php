@@ -11,9 +11,9 @@ namespace Example\Models;
 
 class User implements \Steam\Models\User
 {
-    public function insertOnUpdateUserBySteamId64(int $steamId64, string $steamCommunityId): bool
+    public function insertOnUpdate(array $user): bool
     {
-        // TODO: Implement insertOnUpdateUserBySteamId64() method.
+        // TODO: Implement insertOnUpdate() method.
         return true;
     }
 }

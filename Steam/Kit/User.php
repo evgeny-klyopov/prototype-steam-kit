@@ -9,11 +9,32 @@ namespace Steam\Kit;
 interface User
 {
     /**
-     * Получение SteamId64 пользователя по communityId
-     * @param string $communityId - Идентификатор пользователя в сообществе стиме http://prntscr.com/fwbhw3
-     * @return int                - Возвращает идентификатор steamId64 http://prntscr.com/fwbi2t
+     * Получение информации о пользователе
+     * @param string $steamId64OrCommunityId    - Идентификатор пользователя SteamId64 или CommunityId
+     * @return array $user                      - Возращает информацию о пользователе, communityId - опционально
+     * $user = [
+     *      'steamId64'     => 76561197993222972,
+     *      'communityId'   => 'dronoz'
+     * ];
      */
-    public function getSteamId64ByCommunityId(string $communityId): int;
+    public function getCommunityData(string $steamId64OrCommunityId): array;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /**
      * Получение вещей в инвентаре конкретного пользователя https://wiki.teamfortress.com/wiki/WebAPI/GetPlayerItems

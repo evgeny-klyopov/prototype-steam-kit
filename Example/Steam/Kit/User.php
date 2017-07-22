@@ -5,10 +5,13 @@ namespace Example\Steam\Kit;
 
 class User implements \Steam\Kit\User
 {
-    public function getSteamId64ByCommunityId(string $communityId): int
+    public function getCommunityData(string $communityId): array
     {
         // TODO: Implement getSteam64ByCommunityId() method.
-        return '76561197993222972';
+        return [
+            'steamId64'     => 76561197993222972,
+            'communityId'   => 'dronoz'
+        ];
     }
 
     public function getInventoryBySteamId64(int $steamId64): array
