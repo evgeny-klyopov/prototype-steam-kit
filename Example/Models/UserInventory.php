@@ -11,7 +11,7 @@ namespace Example\Models;
 
 class UserInventory implements \Steam\Models\UserInventory
 {
-    public function updateBySteamId64(int $steamId64, array $inventory): bool
+    public function insertOrUpdateBySteamId64(int $steamId64, array $inventory): bool
     {
         // TODO: Implement updateBySteamId64() method.
         return true;

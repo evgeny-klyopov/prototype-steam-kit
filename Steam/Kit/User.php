@@ -19,25 +19,9 @@ interface User
      */
     public function getCommunityData(string $steamId64OrCommunityId): array;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /**
-     * Получение вещей в инвентаре конкретного пользователя https://wiki.teamfortress.com/wiki/WebAPI/GetPlayerItems
+     * Получение вещей в инвентаре конкретного пользователя
+     * https://wiki.teamfortress.com/wiki/WebAPI/GetPlayerItems
      * @param int $steamId64    - Идентификатор steamId64
      * @return array $inventory - Массив ключи которого идентификаторы вещей в стиме,
      * значение - количество данных вещей
@@ -47,6 +31,23 @@ interface User
      * ];
      */
     public function getInventoryBySteamId64(int $steamId64): array;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /**
      * Получение списка значков пользователя http://prntscr.com/frpw1e
@@ -60,7 +61,7 @@ interface User
      *      @gameCardId => @level
      *      ...
      * ];
-     */
+     *//*
     public function getBadges(int $steamId64): array;
 
     /**
@@ -70,13 +71,13 @@ interface User
      * @param int $gameCardId   - Идентификатор игры
      * @param bool $isMetal     - Флаг металического значка
      * @return int              - Возвращает уровень значка
-     */
+     *//*
     public function getLevelBadge(int $steamId64, int $gameCardId, bool $isMetal): int;
 
     /**
      * Получение списка игры пользователя
      * @param int $steamId64
      * @return array
-     */
-    public function getGames(int $steamId64): array;
+     *//*
+    public function getGames(int $steamId64): array;*/
 }

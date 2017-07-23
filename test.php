@@ -1,6 +1,18 @@
 <?php
 $loader = @include __DIR__ . '/vendor/autoload.php';
 
+class Test {
+    private $userId;
+    public function __construct($userId)
+    {
+        $this->userId = $userId;
+    }
+
+    public function run() {
+        $this->modelUserKit = new \Example\Steam\Kit\User();
+//        $user
+    }
+}
 
 
 

@@ -17,8 +17,18 @@ interface Item
      * @param string $marketHashName    - Алиас вещи на торговой площадке
      * @return array $price             - Массив с ценами о вещах, в долларах
      * $price = [
-     *      'lowestPrice' => @lowestPrice,
-     *      'medianPrice' => @medianPrice
+     *      'lowest_price' => [
+     *          'USD' => 99,
+     *          'GBP' => 59,
+     *          'EUR" => 74,
+     *          'RUB' => 3000
+     *      ],
+     *      'median_price' => [
+     *          'USD' => 249,
+     *          'GBP' => 199,
+     *          'EUR' => 199,
+     *          'RUB' => 7400
+     *      ]
      * ];
      */
     public function getPrice(int $appId, string $marketHashName): array;

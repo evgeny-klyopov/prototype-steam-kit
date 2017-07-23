@@ -9,6 +9,8 @@
 2. [FAQ](https://developer.valvesoftware.com/wiki/Steam_Web_API/Feedback)
 3. [wiki](https://wiki.teamfortress.com/wiki/Category:WebAPI)
 4.  [Документация Steamworks](https://partner.steamgames.com/doc/home)
+5.  [Документация Steam Api](https://lab.xpaw.me/steam_api_documentation.html)
+6.  [Документация Web Steam Api](http://steamwebapi.azurewebsites.net/)
 *********
 ### 3. Требуемый функционал - реализовать все интерфейсы для \Steam/\*.
 1. \Steam\Kit интерфейсы для взаимодейстия со steam api.

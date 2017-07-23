@@ -22,5 +22,5 @@ interface UserInventory
      * @param array $inventory  - Массив вещей, (new \Steam\Kit\User())->getInventoryBySteamId64()
      * @return bool             - Флаг обновления, true - успешное обновление
      */
-    public function updateBySteamId64(int $steamId64, array $inventory): bool;
+    public function insertOrUpdateBySteamId64(int $steamId64, array $inventory): bool;
 }
